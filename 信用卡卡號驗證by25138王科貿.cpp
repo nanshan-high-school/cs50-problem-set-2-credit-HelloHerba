@@ -6,11 +6,11 @@ int main()
   cout <<"請輸入你的信用卡卡號:";
   cin >> card;
   cout << "你的信用卡卡號為:"<<card<<"\n";
-  long int num1,num2,num3;
-  long int a=card[0]-48,b=card[1]-48,c=card[2]-48,d=card[3]-48;
-  long int e=card[4]-48,f=card[5]-48,g=card[6]-48,h=card[7]-48;
-  long int i=card[8]-48,j=card[9]-48,k=card[10]-48,l=card[11]-48;
-  long int m=card[12]-48,n=card[13]-48,o=card[14]-48,p=card[15]-48;
+  int num1,num2,num3;
+  int a=card[0]-48,b=card[1]-48,c=card[2]-48,d=card[3]-48;
+  int e=card[4]-48,f=card[5]-48,g=card[6]-48,h=card[7]-48;
+  int i=card[8]-48,j=card[9]-48,k=card[10]-48,l=card[11]-48;
+  int m=card[12]-48,n=card[13]-48,o=card[14]-48,p=card[15]-48;
   
   
   long int A=card[0]-48,B=card[1]-48,C=card[2]-48,D=card[3]-48;
@@ -42,7 +42,7 @@ int main()
   o=o*2;
   if (o>9)
   {    o=o-9;  }
-  //將奇數位上的數字乘以2,若大於2則減9
+  //將奇數位上的數字乘以2,若大於2則減9(數字加權)
   
 
   num1=a+b+c+d+e+f+g+h+i+j+k+l+m+n+o;
