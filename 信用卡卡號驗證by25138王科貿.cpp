@@ -13,8 +13,8 @@ int main()
   int m=card[12]-48,n=card[13]-48,o=card[14]-48,p=card[15]-48;
   
   
-  long int A=card[0]-48,B=card[1]-48,C=card[2]-48,D=card[3]-48;
-  long int E=card[4]-48,F=card[5]-48;
+  int A=card[0]-48,H=card[1]-48,C=card[2]-48,D=card[3]-48;
+  int E=card[4]-48,F=card[5]-48,G=card[0]-48,B=card[1]-48;
   //可能會好看一點(?
   
   
@@ -70,6 +70,9 @@ int main()
     cout<<"使用的信用卡為Visa Card\n";
     return 0;
   }else 
+  G=G*10;
+  num2=G+H;
+
   A=100000*A;
   B=10000*B;
   C=1000*C;
@@ -77,22 +80,12 @@ int main()
   E=10*E;
   num3=A+B+C+D+E+F;
   
-  if(num3<272100&&num3>222099)
+  if(num3<272100&&num3>222099||num2>50&&num2<56)
   {
     cout<<"使用的信用卡為Master Card\n";
     return 0;
-  }else 
- 
-  A=A/10000;
-  B=B/10000;
-  num2=A+B;
-  
-  if(num2>50&&num2<56)
-  {
-    
-    cout<<"使用的信用卡為Master Card\n";
-    return 0;
-  } else{  cout<<"你使用的卡不符合程式適用範圍內\n";  }
-  //辨別是MasterCard還是VisaCard或著以上皆非
+  }else {
+      cout<<"你使用的卡不符合程式適用範圍內\n";  }
+  //辨別是MasterCard還是VisaCard或者以上皆非
 
 }
